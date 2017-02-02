@@ -1,3 +1,6 @@
+
+
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -5,6 +8,16 @@
 * {
 	box-sizing: border-box;
 }
+
+.main-header {
+    text-align: center;
+}
+
+.banner {
+    text-align: center;
+    padding: 5vw;
+}
+
 
 body {
 	font-family: 'Varela Round', sans-serif;
@@ -14,18 +27,23 @@ body {
 
 p {
 	font-size: .95em;
-	margin-bottom: 1.8em;
+	margin-bottom: 1.5em;
+    margin-left: 2vw;
+    margin-right: 1em;
 }
+
 
 h2,
 h3,
 a {
 	color: #093a58;
+    
 }
 
 h2,
 h3 {
-	margin-top: 0;
+	margin-top: .5em;
+    margin-left: 2vw;
 }
 
 a {
@@ -72,12 +90,14 @@ img {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+    text-align: center;
 }
 
 /* ---- Page Elements ---- */
 
 .logo {
 	width: 190px;
+    
 }
 
 /* ================================= 
