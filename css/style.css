@@ -1,4 +1,9 @@
-
+/* ================================= 
+  Temporary 
+==================================== */
+.col {
+    border: 5px solid red;
+}
 
 
 /* ================================= 
@@ -54,6 +59,8 @@ img {
 	max-width: 100%;
 }
 
+
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -103,8 +110,75 @@ img {
 /* ================================= 
   Media Queries
 ==================================== */
+@media (min-width: 480px) {
+   
+/* ================================= 
+Create 2-column layout
+==================================== */
+   .col {
+        float:left;
+        width: 50%;
+    }
+
+    
+/* ================================= 
+Change to inline
+==================================== */
+    li {
+        display:inline-block;
+        margin: 0 3vw;
+    }
+    
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
 
 @media (min-width: 769px) {
+
+    /* ================================= 
+Create 3-column layout
+==================================== */
+   .primary {
+        float:left;
+        width: 30%;
+    }
+    
+    .tertiary {
+        float:right;
+        width: 30%;
+    }
+    
+    .secondary {
+        float:left;
+        width: 40%;
+    }
+
+    
+/* ================================= 
+Change to inline
+==================================== */
+    li {
+        display:inline-block;
+        margin: 0 3vw;
+    }
+    
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
 
 
 
